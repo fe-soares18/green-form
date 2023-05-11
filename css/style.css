@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
+
+:root {
+    --main-font: 'Chakra Petch', sans-serif;;
+    --border-color: rgba(92, 255, 92, 1);
+    --backgroun-color: rgba(85, 226, 85, 0.13);
+    --font-color: rgba(92, 255, 92, 1);
+    --hover-color: rgba(85, 226, 85, 0.13);
+}
+
+html {
+    height: 100%;
+}
+body {
+    background: black;
+    height: 100%;
+}
+
+h1 {
+    margin: 0 0 1em 0;
+    font-weight: 700;
+}
+
+p {
+    margin: 0 0 0.5em 0;
+}
+
+input {
+    margin: 0 0 0.5em 0;
+    background-color: transparent;
+    border: solid 1px var(--border-color);
+    border-radius: 0.5em;
+    color: var(--font-color);
+    font-family: var(--main-font);
+}
+
+.main_container {
+    display: flex;
+    position:  relative;
+    color: var(--font-color);
+    text-align: center;
+    top: 15vh;
+    justify-content: center;
+    font-family:var(--main-font)
+}
+
+.box_container {
+    padding: 10em 20em;
+    display: flex;
+    gap: 2em;
+    border: solid 1px var(--border-color);
+    border-radius: 0.5em;
+    align-items: center;
+    justify-content: center;
+    block-size: fit-content;
+    width: fit-content;
+    background-color: var(--backgroun-color);
+    flex-direction: column;
+}
+
+.form_container {
+    padding: 1em 2em;
+    border: solid 1px var(--border-color);
+    border-radius: 0.5em;
+    flex-direction: column;
+    color: var(--font-color);
+}
+
+.botoes {
+    margin: 1em 0 0 0;
+    border: solid 1px var(--border-color);
+    background: transparent;
+    color: var(--font-color);
+    border-radius: 0.5em;
+    font-weight: 700;
+}
+
+/*Ativador do display de registro/login*/
+#login_input-id{
+    display: flex;
+}
+
+#register_input-id {
+    display: none;
+}
+
+.change_mode {
+    border: solid 1px var(--border-color);
+    background: transparent;
+    color: var(--font-color);
+    border-radius: 0.5em;
+    padding: 0.5em 2.5em;
+    font-family: var(--main-font);
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: var(--hover-color)
+}
+
+button:active {
+    background-color: transparent;
+}
