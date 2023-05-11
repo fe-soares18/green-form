@@ -3,8 +3,7 @@ const loginContainer = document.querySelector("div#login_input-id");
 const regContainer = document.querySelector("div#register_input-id");
 
 changeButton.addEventListener("click", () => {
-    console.log("teste");
-    changeMode ()
+    changeMode ();
 });
 
 function changeMode () {
